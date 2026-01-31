@@ -3,7 +3,6 @@ import './App.css';
 
 // Import all images
 import profileImg from './assets/images/profile.jpg';
-import chandelier from './assets/images/photo-01-chandelier.jpeg';
 import sfFerris from './assets/images/photo-02-sf-ferris.jpeg';
 import ferrisCloseup from './assets/images/photo-03-ferris-closeup.jpeg';
 import oceanView from './assets/images/photo-05-ocean-view.jpeg';
