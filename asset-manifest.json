@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/main/static/css/main.76223da4.css",
+    "main.js": "/main/static/js/main.1c0ff445.js",
+    "static/media/photo-15-still-life.jpeg": "/main/static/media/photo-15-still-life.25340919a7ac1df777fb.jpeg",
+    "static/media/photo-09-nyc-street.jpeg": "/main/static/media/photo-09-nyc-street.49b3a015520d1b32a949.jpeg",
+    "static/media/photo-03-ferris-closeup.jpeg": "/main/static/media/photo-03-ferris-closeup.0cb740868186bad542cc.jpeg",
+    "static/media/photo-11-oculus.jpeg": "/main/static/media/photo-11-oculus.976d0db59fe687597b70.jpeg",
+    "static/media/photo-07-brochures.jpeg": "/main/static/media/photo-07-brochures.3583cc332a5629140d07.jpeg",
+    "static/media/photo-14-datsun.jpeg": "/main/static/media/photo-14-datsun.4fdf657615f0eff8668d.jpeg",
+    "static/media/graphic5_mothers_day.png": "/main/static/media/graphic5_mothers_day.14e15864d5afee798839.png",
+    "static/media/profile.jpg": "/main/static/media/profile.1e43fe47399f34eba589.jpg",
+    "static/media/photo-06-wharf-ferris.jpeg": "/main/static/media/photo-06-wharf-ferris.38c00ed4363c940def8f.jpeg",
+    "static/media/photo-02-sf-ferris.jpeg": "/main/static/media/photo-02-sf-ferris.1b468fc7ac999b396bec.jpeg",
+    "static/media/graphic3_feast_discount.png": "/main/static/media/graphic3_feast_discount.4d58ca825c28409326b1.png",
+    "static/media/photo-08-gg-side.jpeg": "/main/static/media/photo-08-gg-side.3d63b46b4103301e454b.jpeg",
+    "static/media/photo-10-gg-front.jpeg": "/main/static/media/photo-10-gg-front.26ff81c795310f0816a2.jpeg",
+    "static/media/photo-13-daisies.jpeg": "/main/static/media/photo-13-daisies.2a2ff44d6c6a20771d0d.jpeg",
+    "static/media/graphic2_smashed_burger.png": "/main/static/media/graphic2_smashed_burger.9fcf5d3a8650376b679a.png",
+    "static/media/graphic4_grill_sandwich.png": "/main/static/media/graphic4_grill_sandwich.1500753e4e26d9337a9a.png",
+    "static/media/graphic1_healthy_food.png": "/main/static/media/graphic1_healthy_food.bc48094bc2b9aeacd271.png",
+    "static/media/graphic6_christmas_party.png": "/main/static/media/graphic6_christmas_party.5f771687166cc35cd06f.png",
+    "static/media/photo-05-ocean-view.jpeg": "/main/static/media/photo-05-ocean-view.b90809eca43d88eb917e.jpeg",
+    "index.html": "/main/index.html",
+    "main.76223da4.css.map": "/main/static/css/main.76223da4.css.map",
+    "main.1c0ff445.js.map": "/main/static/js/main.1c0ff445.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76223da4.css",
+    "static/js/main.1c0ff445.js"
+  ]
+}
