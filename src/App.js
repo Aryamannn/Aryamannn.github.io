@@ -92,7 +92,7 @@ function App() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [lightboxActive, currentIndex, currentType, photoItems, graphicItems]);
+  }, [lightboxActive, currentIndex, currentType]);
 
   const currentItems = currentType === 'photo' ? photoItems : graphicItems;
   const currentItem = currentItems[currentIndex];
