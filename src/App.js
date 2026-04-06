@@ -24,12 +24,7 @@ import graphic4 from './assets/graphics/graphic4_grill_sandwich.png';
 import graphic5 from './assets/graphics/graphic5_mothers_day.png';
 import graphic6 from './assets/graphics/graphic6_christmas_party.png';
 
-function App() {
-  const [lightboxActive, setLightboxActive] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentType, setCurrentType] = useState('photo');
-
-  const photoItems = [
+const photoItems = [
     { img: sfFerris, title: 'Urban Skyline', category: 'San Francisco' },
     { img: ggSide, title: 'Golden Hour', category: 'Golden Gate Bridge' },
     { img: oculus, title: 'The Oculus', category: 'NYC Architecture' },
@@ -44,7 +39,7 @@ function App() {
     { img: brochures, title: 'Wanderlust', category: 'Travel & Lifestyle' }
   ];
 
-  const graphicItems = [
+const graphicItems = [
     { img: graphic1, title: 'Healthy Food at Otter Express', category: 'Menu promotion campaign' },
     { img: graphic2, title: 'Smashed Burger Launch', category: 'New product announcement' },
     { img: graphic3, title: 'Feast For Less', category: 'Build Your Own LTO' },
@@ -52,6 +47,11 @@ function App() {
     { img: graphic5, title: "Mother's Day Sunday Roast", category: 'Special event promotion' },
     { img: graphic6, title: 'Christmas Party', category: 'Holiday event campaign' }
   ];
+
+function App() {
+  const [lightboxActive, setLightboxActive] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentType, setCurrentType] = useState('photo');
 
   const openLightbox = (index, type) => {
     setCurrentIndex(index);
@@ -78,14 +78,21 @@ function App() {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (!lightboxActive) return;
-      if (e.key === 'Escape') closeLightbox();
-      else if (e.key === 'ArrowLeft') prevItem();
-      else if (e.key === 'ArrowRight') nextItem();
+      if (e.key === 'Escape') {
+        setLightboxActive(false);
+        document.body.style.overflow = '';
+      } else if (e.key === 'ArrowLeft') {
+        const items = currentType === 'photo' ? photoItems : graphicItems;
+        setCurrentIndex((currentIndex - 1 + items.length) % items.length);
+      } else if (e.key === 'ArrowRight') {
+        const items = currentType === 'photo' ? photoItems : graphicItems;
+        setCurrentIndex((currentIndex + 1) % items.length);
+      }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [lightboxActive, currentIndex, currentType]);
+  }, [lightboxActive, currentIndex, currentType, photoItems, graphicItems]);
 
   const currentItems = currentType === 'photo' ? photoItems : graphicItems;
   const currentItem = currentItems[currentIndex];
